@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/thatONEjustin/smoothland/issues"
   },
-  "homepage": "https://github.com/thatONEjustin/smoothland#readme"
+  "homepage": "https://github.com/thatONEjustin/smoothland#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49"
+  }
 }
