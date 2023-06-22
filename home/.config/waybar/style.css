@@ -1,0 +1,74 @@
+* {
+  font-family: "FiraCode Nerd Font Mono", sans-serif;
+}
+
+window#waybar {
+  background-color: rgba(43, 48, 59, 0.5);
+  border-bottom: 2px solid rgba(100, 114, 125, 0.5);
+
+  color: white;
+}
+
+#workspaces {
+  font-size: 18px;
+}
+
+#workspaces button {
+  color: white;
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+#workspaces button:hover {
+  background: transparent;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.modules-left {
+  padding-left: 15px;
+}
+
+.modules-right {
+  padding-right: 15px;
+}
+
+.modules-right widget {
+  margin-right: 20px;
+}
+
+.modules-right widget > label {
+  font-size: 22px;
+}
+
+.modules-right widget > label > big {
+  font-size: 48px;
+}
+
+/*#idle_inhibitor,
+#wireplumber, 
+#network, 
+#cpu,
+#memory,
+#tray,
+#clock {
+}
+*/
+
+.modules-right > widget {
+  margin-right: 30px;
+}
+
+.modules-right > widget:last-child {
+  margin-right: 0px;
+}
+
+@keyframes blink {
+  to {
+    background-color: #eb3d4b;
+    color: black;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "smoothland",
+  "version": "1.0.0",
+  "description": "just basic package stuff for building CSS component styling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatONEjustin/smoothland.git"
+  },
+  "keywords": [
+    "linux",
+    "arch",
+    "hyprland",
+    "wayland",
+    "amd",
+    "twm",
+    "paru"
+  ],
+  "author": "justin p",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatONEjustin/smoothland/issues"
+  },
+  "homepage": "https://github.com/thatONEjustin/smoothland#readme"
+}

@@ -1,0 +1,84 @@
+{
+  "layer": "top", 
+  "position": "top", 
+  "height": 50, 
+  "spacing": 4, 
+  "modules-left": [ "hyprland/window" ],
+  "modules-center": ["wlr/workspaces"],
+  "modules-right": ["idle_inhibitor", "keyboard-state", "wireplumber", "network", "cpu", "memory", "temperature", "tray", "clock"], 
+  "hyprland/window": {
+    "format": "{}",
+    "separate-outputs": true
+  },
+  "wlr/workspaces": {
+    "format": "<big>{icon}</big>",
+    "format-icons": {
+      "4": "󰭻",
+      "Steam": "󰓓",
+      "Games": "󱄄",
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "on-click": "activate"
+  },
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} <big>{icon}</big>",
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
+  "idle_inhibitor": {
+    "format": "<big>{icon}</big>",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+  "clock": {
+    "timezone": "America/Chicago",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
+    "format": "{:%I:%M %p}"
+  },
+  "cpu": {
+    "format": "{avg_frequency} 󰻠",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "{percentage}% "
+  },
+  "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C <big>{icon}</big>",
+    "format-icons": [""]
+  },
+  "network": {
+    "interface": "enp6s0",
+    "format": "{bandwidthTotalBytes} 󰈀"
+  },
+  "wireplumber": {
+    "format": "{volume}% <big>{icon}</big>",	
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "custom/screenshots": {
+    "format": "<big>{icon}</big>",
+    "format-icons": {
+      "default": "󰿁"
+    },
+    "on-click": "grim -g \"$(slurp)\"" 
+  }
+}
+
