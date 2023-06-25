@@ -1,0 +1,9 @@
+* {
+  font-family: "FiraCode Nerd Font Mono", sans-serif;
+}
+
+window#waybar {
+  background-color: transparent;
+  border: none;
+  color: @theme_text_color;
+}

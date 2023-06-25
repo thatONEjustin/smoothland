@@ -1,0 +1,6 @@
+@keyframes blink {
+  to {
+    background-color: #eb3d4b;
+    color: black;
+  }
+}

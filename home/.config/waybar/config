@@ -3,36 +3,53 @@
   "position": "top", 
   "height": 50, 
   "spacing": 4, 
-  "modules-left": [ "hyprland/window" ],
-  "modules-center": ["wlr/workspaces"],
-  "modules-right": ["idle_inhibitor", "keyboard-state", "wireplumber", "network", "cpu", "memory", "temperature", "tray", "clock"], 
+  "margin-top": 10, 
+  "modules-left": [ 
+    "wlr/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock",
+    "tray", 
+  ],
+  "modules-right": [
+    "idle_inhibitor", 
+    "keyboard-state", 
+    "wireplumber", 
+    "network", 
+    "cpu", 
+    "memory", 
+  ], 
   "hyprland/window": {
-    "format": "{}",
+    "format": "<span size='xx-large'></span> <span size='large'>{}</span>",
     "separate-outputs": true
   },
   "wlr/workspaces": {
-    "format": "<big>{icon}</big>",
+    "sort-by-name": false,
+    "sort-by-coordinates": false,
+    "format": "{name} <span size='x-large'>{icon}</span>",
     "format-icons": {
-      "4": "󰭻",
-      "Steam": "󰓓",
-      "Games": "󱄄",
+      "main": "",
+      "code": "",
+      "chat": "󰭻",
+      "xtra": "󰅏",
+      "steam": "󰓓",
+      "games": "󱄄",
+      "watch": "󰑈", 
       "urgent": "",
-      "active": "",
-      "default": ""
     },
     "on-click": "activate"
   },
   "keyboard-state": {
-    "numlock": true,
     "capslock": true,
-    "format": "{name} <big>{icon}</big>",
+    "format": "{name} <span size='xx-large' line_height='1.25' rise='-3pt'>{icon}</span>",
     "format-icons": {
       "locked": "",
       "unlocked": ""
     }
   },
   "idle_inhibitor": {
-    "format": "<big>{icon}</big>",
+    "format": "<span size='xx-large' line_height='1.25' rise='-3pt'>{icon}</span>",
     "format-icons": {
       "activated": "",
       "deactivated": ""
@@ -45,28 +62,28 @@
   "clock": {
     "timezone": "America/Chicago",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
-    "format": "{:%I:%M %p}"
+    "format": "<span size='large'>{:%a, %d %b | %I:%M %p}</span>"
   },
   "cpu": {
-    "format": "{avg_frequency} 󰻠",
+    "format": "{avg_frequency} GHz <span size='xx-large' line_height='1.25' rise='-3pt'>󰻠</span>",
     "tooltip": false
   },
   "memory": {
-    "format": "{percentage}% "
+    "format": "{percentage}% of {total}gb"
   },
   "temperature": {
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
-    "format": "{temperatureC}°C <big>{icon}</big>",
+    "format": "{temperatureC}°C <span size='xx-large' line_height='1.25' rise='-3pt'>{icon}</span>",
     "format-icons": [""]
   },
   "network": {
     "interface": "enp6s0",
-    "format": "{bandwidthTotalBytes} 󰈀"
+    "format": "{bandwidthTotalBytes} <span size='xx-large' line_height='1.25' rise='-3pt'>󰈀</span>"
   },
   "wireplumber": {
-    "format": "{volume}% <big>{icon}</big>",	
+    "format": "{volume}% <span size='xx-large' line_height='1.25' rise='-3pt'>{icon}</span>",	
     "format-muted": "",
     "format-icons": {
       "default": ["", "", ""]
@@ -74,11 +91,10 @@
     "on-click": "pavucontrol"
   },
   "custom/screenshots": {
-    "format": "<big>{icon}</big>",
+    "format": "<span size='xx-large' line_height='1.25' rise='-3pt'>{icon}</span>",
     "format-icons": {
       "default": "󰿁"
     },
     "on-click": "grim -g \"$(slurp)\"" 
   }
 }
-

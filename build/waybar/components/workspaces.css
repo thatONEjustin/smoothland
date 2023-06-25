@@ -1,0 +1,33 @@
+#workspaces {
+  font-size: 18px;
+  padding: 5px 20px 5px 0px;
+
+  button {
+    color: @theme_text_color;
+    background: transparent;
+    border: none;
+
+    > * {
+      > label {
+        border-bottom: 2px solid transparent;
+        border-radius: 2px;
+        box-shadow: none;
+      }
+    }
+
+    &.active {
+      > * {
+        > label {
+          border-bottom: 2px solid @theme_text_color;
+        }
+      }
+    }
+
+    &:hover {
+      background: transparent;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+

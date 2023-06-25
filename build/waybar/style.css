@@ -1,0 +1,7 @@
+@import url('./components/variables.css');
+
+@import url('./components/waybar.css');
+@import url('./components/workspaces.css');
+@import url('./components/modules.css');
+
+@import url('./components/animations.css');
