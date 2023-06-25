@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "mix watch",
-    "prod": "mix --production"
+    "prod": "mix"
   },
   "repository": {
     "type": "git",
