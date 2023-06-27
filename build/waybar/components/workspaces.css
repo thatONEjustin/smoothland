@@ -3,12 +3,13 @@
   padding: 5px 20px 5px 0px;
 
   button {
-    color: @theme_text_color;
+    color: @text_color;
     background: transparent;
     border: none;
 
-    > * {
+    > box {
       > label {
+        padding-bottom: 5px;
         border-bottom: 2px solid transparent;
         border-radius: 2px;
         box-shadow: none;
@@ -16,9 +17,9 @@
     }
 
     &.active {
-      > * {
+      > box {
         > label {
-          border-bottom: 2px solid @theme_text_color;
+          border-color: @text_color;        
         }
       }
     }

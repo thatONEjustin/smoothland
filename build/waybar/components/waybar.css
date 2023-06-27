@@ -5,5 +5,5 @@
 window#waybar {
   background-color: transparent;
   border: none;
-  color: @theme_text_color;
+  color: @text_color;
 }
