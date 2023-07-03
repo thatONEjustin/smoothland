@@ -26,15 +26,12 @@
    * .modules-left
    */
   "wlr/workspaces": {
-    "sort-by-name": false,
-    "sort-by-coordinates": false,
     "format": "{name} <span size='x-large'>{icon}</span>",
     "format-icons": {
       "main": "",
-      "code": "",
       "chat": "󰭻",
+      "code": "",
       "xtra": "󰅏",
-      // "steam": "󰓓",
       "games": "󱄄",
       "watch": "󰑈", 
       "urgent": "",
